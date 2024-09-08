@@ -1,4 +1,4 @@
-.list {
+/*.list {
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
@@ -6,4 +6,31 @@
 .item {
     margin-right: 10px;
     margin-bottom: 10px;
-}
+}*/
+
+/* Container for Product Cards */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Product Card */
+  .product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  /* Hover Effect */
+  .product-card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+  }
+  
+  
+

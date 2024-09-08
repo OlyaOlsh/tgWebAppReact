@@ -1,8 +1,42 @@
-.button {
+/*.button {
 padding: 10px 15px;
 background: var(--tg-theme-button-color);
 color: var(--tg-theme-button-text-color);
 border: none;
 outline: none;
 cursor: pointer;
-}
+}*/
+/* Close Button Styles */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    transition: background 0.3s;
+  }
+  
+  .close-button:hover {
+    background: rgba(255, 255, 255, 1);
+  }
+  
+  /* Telegram and Header Styling */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  
