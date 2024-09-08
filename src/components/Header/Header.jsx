@@ -10,8 +10,9 @@ import './Header.css';
         <div className={'header'}>
             <Button onClick ={onClose}>Закрыть</Button>
             <span className={'username'}>
-                {user?.username}
+             Добро пожаловать {user?.username}!
             </span>
+            <h1>Рады видеть Вас в нашем Mini App!</h1>
         </div>
     );
  };
