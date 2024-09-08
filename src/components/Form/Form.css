@@ -16,72 +16,84 @@
     margin-top: 15px;
 }*/
 
-/* Основные стили для страницы */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #fafafa; /* Светлый нейтральный фон */
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Контейнер формы */
-  .form-container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Мягкая тень */
-  }
-  
-  /* Заголовок формы */
-  .form-container h2 {
-    text-align: center;
-    font-size: 22px;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  /* Поля ввода */
-  .form-input {
+/* Base styles for the form */
+.form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-  }
-  
-  input[type="text"] {
-    padding: 12px;
-    font-size: 14px;
-    border: 1px solid #ddd;
+    gap: 20px;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    background: #f8f9fa;
     border-radius: 10px;
-    transition: all 0.3s;
-    background-color: #fdfdfd;
-    outline: none;
-  }
-  
-  /* Стили при наведении на поля ввода */
-  input[type="text"]:focus {
-    border: 1px solid #e85a71; /* Акцентный цвет */
-    box-shadow: 0 0 5px rgba(232, 90, 113, 0.4); /* Легкое свечение */
-  }
-  
-  /* Секция для типа пользователя (кнопка) */
-  .user-type-button {
-    background-color: #e85a71;
-    color: #fff;
-    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Header styles */
+.form h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
     text-align: center;
-    border-radius: 8px;
+}
+
+/* Input field styles */
+.input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    color: #555;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input field hover and focus effects */
+.input:focus {
+    border-color: #ff7f50;
+    box-shadow: 0 0 5px rgba(255, 127, 80, 0.5);
+}
+
+/* Styles for the select dropdown */
+.select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    color: #555;
+    background: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Select hover and focus effects */
+.select:focus {
+    border-color: #ff7f50;
+    box-shadow: 0 0 5px rgba(255, 127, 80, 0.5);
+}
+
+/* Button styles */
+button {
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  /* Эффект наведения для кнопки */
-  .user-type-button:hover {
-    background-color: #c74b60; /* Темнее на оттенок */
-  }
-  
-  
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effects */
+button:hover {
+    background-color: #ff4500;
+    transform: translateY(-2px);
+}
+
+/* Button disabled state */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
