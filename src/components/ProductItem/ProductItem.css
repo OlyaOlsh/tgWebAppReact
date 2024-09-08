@@ -27,6 +27,8 @@
 .img {
     width: 100%;
     height: auto;
+    background: rgb(211, 211, 211);
+    
     object-fit: cover;
   }
   
