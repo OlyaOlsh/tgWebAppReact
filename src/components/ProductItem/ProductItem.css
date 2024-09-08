@@ -9,7 +9,7 @@
 
 .img {
     width: 100%;
-    background: lightgray;
+    background: rgb(211, 211, 211);
     height: 100px;
     margin: 0 auto;
     background: var(--tg-theme-button-color);
