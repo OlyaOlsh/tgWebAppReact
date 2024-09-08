@@ -9,7 +9,7 @@
 }*/
 
 /* Container for Product Cards */
-.product-container {
+.list{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 20px;
@@ -17,7 +17,7 @@
   }
   
   /* Product Card */
-  .product-card {
+  .item{
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -27,7 +27,7 @@
   }
   
   /* Hover Effect */
-  .product-card:hover {
+  .item:hover {
     transform: translateY(-5px); /* Lift effect */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
   }

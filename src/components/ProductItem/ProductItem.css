@@ -24,38 +24,38 @@
 }*/
 
 /* Product Image Placeholder */
-.product-card img {
+.img {
     width: 100%;
     height: auto;
     object-fit: cover;
   }
   
   /* Product Info */
-  .product-info {
+  .description {
     padding: 10px 15px;
     text-align: center;
   }
   
-  .product-info h3 {
+  .description h3 {
     font-size: 16px;
     margin: 10px 0 5px;
     color: #444;
   }
   
-  .product-info p {
+  .description p {
     font-size: 14px;
     margin: 0 0 10px;
     color: #777;
   }
   
   /* Price and Button Section */
-  .product-price {
+  .price {
     font-size: 18px;
     font-weight: bold;
     color: #e85a71; /* Highlight color for price */
   }
   
-  .add-to-cart {
+  .add-btn {
     display: block;
     width: 100%;
     padding: 10px;
@@ -70,7 +70,7 @@
   }
   
   /* Button Hover State */
-  .add-to-cart:hover {
+  .add-btn:hover {
     background-color: #c74b60; /* Slightly darker on hover */
   }
   
