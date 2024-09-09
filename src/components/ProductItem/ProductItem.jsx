@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from "../Button/Button";
 import './ProductItem.css';
+import img01 from '../img/apple.jpg';
+
 
 const ProductItem = ({product, className, onAdd}) => {
 
@@ -10,7 +12,10 @@ const ProductItem = ({product, className, onAdd}) => {
 
     return (
         <div className={'product ' + className}>
-            <div className={'img'}/>
+            <div className={'img'}>
+            
+             <img src ={'img01'} alt ='productitems'/> 
+            </div>
             <div className={'title'}>{product.title}</div>
             <div className={'description'}>{product.description}</div>
             <div className={'price'}>

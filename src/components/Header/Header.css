@@ -39,4 +39,8 @@
   .username:hover {
     background-color: #006fa1;
   }
+
+  .welcome {
+    font-size: 14px;
+  }
   
