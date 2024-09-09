@@ -8,7 +8,7 @@ import './Header.css';
 
     return (
         <div className={'header'}>
-            <Button onClick ={onClose}>Закрыть</Button>
+           {/* <Button onClick ={onClose}>Закрыть</Button>*/}
             <span className={'username'}>
              Добро пожаловать {user?.username}!
             </span>
