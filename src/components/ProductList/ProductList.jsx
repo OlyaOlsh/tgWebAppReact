@@ -6,13 +6,13 @@ import {useCallback, useEffect} from "react";
 
 const products = [
     {id: '1', title: 'Яблоки', price: 5000, description: 'Вкусные'},
-    {id: '2', title: 'Апельсины', price: 12000, description: 'Спелые'},
+    {id: '2', title: 'Апельсины', price: 1200, description: 'Спелые'},
     {id: '3', title: 'Персики', price: 5000, description: 'Вкусные'},
     {id: '4', title: 'Лимоны', price: 122, description: 'Вкусные'},
     {id: '5', title: 'Манго', price: 5000, description: 'Спелое'},
     {id: '6', title: 'Вишня', price: 600, description: 'Спелая'},
     {id: '7', title: 'Бананы', price: 5500, description: 'Вкусные'},
-    {id: '8', title: 'Ананас', price: 12000, description: 'Вкусный из Африки'},
+    {id: '8', title: 'Ананас', price: 1200, description: 'Вкусный'},
 ]
 
 const getTotalPrice = (items = []) => {

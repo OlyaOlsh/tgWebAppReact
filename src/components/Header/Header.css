@@ -31,16 +31,25 @@
     padding: 8px 16px;
     border-radius: 20px;
     color: #fff;
-    font-size: 14px;
+    font-size: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
   }
   
+
+  .welcome {
+    background-color: #0088cc;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
   .username:hover {
     background-color: #006fa1;
   }
 
-  .welcome {
-    font-size: 14px;
-  }
+ 
   
