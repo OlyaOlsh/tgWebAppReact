@@ -22,7 +22,7 @@
 /* Styles for each item within the list */
 .item {
   flex: 1 1 calc(50% - 30px); /* Responsive layout for 2 items per row */
-  max-width: 170px; /* Ensures items do not exceed image width */
+  max-width: 160px; /* Ensures items do not exceed image width */
   transition: transform 0.2s, box-shadow 0.2s;
 }
 

@@ -9,14 +9,36 @@
     margin-left: auto;
 }*/
 
-  .header {
+ /* .header {
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 10px;
       background-color: #fafafa; /* Similar light background */
-      border-bottom: 1px solid #ddd;
-  }
+      /*border-bottom: 1px solid #ddd;
+  }*/
+  
+/* Styles for the header component */
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff; /* Optional background for fallback */
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Style for the header image */
+.header-image {
+    width: 100%;
+    height: 150px; /* Adjust height to fit the design */
+    object-fit: cover;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
   
   .username {
       font-size: 14px;
