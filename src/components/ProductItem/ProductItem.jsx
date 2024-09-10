@@ -4,6 +4,7 @@ import './ProductItem.css';
 
 
 
+
 const ProductItem = ({product, className, onAdd}) => {
 
     const onAddHandler = () => {
@@ -12,8 +13,13 @@ const ProductItem = ({product, className, onAdd}) => {
 
     return (
         <div className={'product ' + className}>
-            <div className={'img'} />
-            <img class="logo" src="/images/apple.jpg" alt="My_Logo"></img>
+           <img
+           src = {product.img}
+           alt = "Product img"
+           className='img'
+           />
+          {/*  <div className={'img'}  />*/} 
+          {/* <img class="logo" src="/images/apple.jpg" alt="My_Logo"></img> */} 
             <div className={'title'}>{product.title}</div>
             <div className={'description'}>{product.description}</div>
             <div className={'price'}>

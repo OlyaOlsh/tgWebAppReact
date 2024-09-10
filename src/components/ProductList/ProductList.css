@@ -8,29 +8,29 @@
     margin-bottom: 10px;
 }*/
 
-/* Container for Product Cards */
-.list{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  /* Product Card */
-  .item{
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-  }
-  
-  /* Hover Effect */
-  .item:hover {
-    transform: translateY(-5px); /* Lift effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
-  }
-  
+  /* Styles for the list container */
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f0f0f0; /* A soft, neutral background color */
+  border-radius: 8px;
+}
+
+/* Styles for each item within the list */
+.item {
+  flex: 1 1 calc(50% - 30px); /* Responsive layout for 2 items per row */
+  max-width: 170px; /* Ensures items do not exceed image width */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+
   
 
