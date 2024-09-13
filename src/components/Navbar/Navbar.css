@@ -1,0 +1,89 @@
+/* General styles for the navbar */
+.nav {
+    background-color: #fff; /* White background for a clean look */
+    border-bottom: 1px solid #e5e5e5; /* Subtle border at the bottom */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Keeps the navbar on top during scrolling */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Ensures consistent padding */
+}
+
+/* Flex layout for the navbar row */
+.nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333; /* Dark color for the logo */
+    text-decoration: none;
+}
+
+.Logo strong {
+    color: #3498db; /* Accent color for emphasis */
+}
+
+/* Navigation list styles */
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list_item {
+    margin-left: 20px; /* Space between each item */
+}
+
+.nav-list_item:first-child {
+    margin-left: 0; /* No margin for the first item */
+}
+
+.nav_list_home {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav_list_home:hover {
+    background-color: #3498db; /* Blue background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .nav-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-list_item {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav_list_home {
+        width: 100%;
+        text-align: left;
+    }
+}

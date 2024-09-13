@@ -1,0 +1,57 @@
+/* Main section styling */
+.section {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    min-height: 100vh; /* Ensures the section takes full screen height */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Project details container */
+.project-details {
+    text-align: center; /* Centering the content */
+}
+
+/* Title styling */
+.title-1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling for the image */
+.project-details__cover {
+    width: 100%;
+    max-width: 350px; /* Limit image width on mobile */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px;
+}
+
+/* Description section */
+.project-details__desc {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .title-1 {
+        font-size: 20px;
+    }
+
+    .project-details__cover {
+        max-width: 300px; /* Smaller image on mobile */
+    }
+
+    .project-details__desc {
+        font-size: 14px;
+    }
+}
