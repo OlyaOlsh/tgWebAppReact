@@ -1,0 +1,22 @@
+/* Navbar.css */
+.nav {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+}
+
+.nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Spacing between links */
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+}
