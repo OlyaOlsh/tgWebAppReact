@@ -22,7 +22,7 @@ const ProductItem = ({product, className, onAdd, index}) => {
           {/*  <div className={'img'}  />*/} 
           {/* <img class="logo" src="/images/apple.jpg" alt="My_Logo"></img> */} 
             <div className={'title'}>{product.title}</div>
-            <div className={'id'}>{index}</div>
+           {/* <div className={'id'}>{index}</div>*/} 
             <div className={'description'}>{product.description}</div>
             <div className={'price'}>
                 <span>Стоимость: <b>{product.price}</b></span>

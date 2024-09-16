@@ -16,6 +16,7 @@ const Navbar = () => {
                     <NavLink to  ="/" className ="nav_list_home">каталог</NavLink>
                   {/*  <NavLink to  ="/itempage" className ="nav_list_home">продукт</NavLink>*/}
                     <NavLink to  ="/contacts" className ="nav_list_home">контакты</NavLink>
+                    <NavLink to  ="/addproduct" className ="nav_list_home">добавить</NavLink>
                     </ul>
                 </div>
             </div>

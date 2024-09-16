@@ -11,6 +11,7 @@ import Form from "./components/Form/Form";
 import ItemPage from "./pages/ItemPage/ItemPage";
 import Contacts from './pages/Contacts/Contacts';
 import ScrollToTop from './utils/scrollToTop';
+import AddProduct from './pages/AddProduct/AddProduct';
 
 
 
@@ -33,6 +34,7 @@ function App() {
         <Route path ={'form'}element={<Form/>}/>
         <Route path ="/product/:id" element = {<ItemPage/>}/>
         <Route path ="/contacts" element = {<Contacts/>}/>
+       {/* <Route path ="/addproduct" element = {<AddProduct/>}/>*/}
       </Routes>
 
     </div>
