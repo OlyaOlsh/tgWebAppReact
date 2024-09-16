@@ -14,7 +14,7 @@ import headerImage  from "./../../imagesItem/headerImage.png";
             <span className={'username'}>
              Добро пожаловать {user?.username}!
             </span>
-            <h3 className={'welcome'}>Рады видеть Вас в нашем Mini App!</h3>
+            {/*<h3 className={'welcome'}>Рады видеть Вас в нашем Mini App!</h3>*/}
         </div>
     );
  };

@@ -1,17 +1,19 @@
-import React, {useState} from 'react';
+ import React, {useState} from 'react';
 import './ProductList.css';
 import ProductItem from "../ProductItem/ProductItem";
 import {useTelegram} from "../../hooks/useTelegram";
 import {useCallback, useEffect} from "react";
 
-import curImage1  from "./../../imagesItem/image1.jpg";
-import curImage2  from "./../../imagesItem/image2.jpg";
-import curImage3  from "./../../imagesItem/image3.jpg";
-import curImage4  from "./../../imagesItem/image4.jpg";
-import curImage5  from "./../../imagesItem/image5.jpg";
-import curImage6  from "./../../imagesItem/image6.jpg";
-import curImage7  from "./../../imagesItem/image7.jpg";
-import curImage8  from "./../../imagesItem/image8.jpg";
+import { products } from '../helpers/productsList';
+
+{/*import curImage1  from "./../../imagesItem/img1.png";
+import curImage2  from "./../../imagesItem/img2.png";
+import curImage3  from "./../../imagesItem/img3.png";
+import curImage4  from "./../../imagesItem/img4.png";
+import curImage5  from "./../../imagesItem/img5.png";
+import curImage6  from "./../../imagesItem/img6.png";
+import curImage7  from "./../../imagesItem/img7.png";
+import curImage8  from "./../../imagesItem/img8.png";
 
 import curImageBig1  from "./../../imagesItem/imageBig1.jpg";
 import curImageBig2  from "./../../imagesItem/imageBig2.jpg";
@@ -32,7 +34,7 @@ const products = [
     {id: '6', title: 'Вишня', price: 600, description: 'Спелая', img: curImage6, imgBig: curImageBig6},
     {id: '7', title: 'Бананы', price: 5500, description: 'Вкусные', img: curImage7, imgBig: curImageBig7},
     {id: '8', title: 'Ананас', price: 1200, description: 'Вкусный', img: curImage8, imgBig: curImageBig8},
-]
+]*/}
 
 const getTotalPrice = (items = []) => {
     return items.reduce((acc, item) => {
@@ -90,11 +92,12 @@ const ProductList = () => {
 
     return (
         <div className={'list'}>
-            {products.map(item => (
-                <ProductItem
+            {products.map((item, index)  => (
+                <ProductItem key = {item.id}
                     product={item}
                     onAdd={onAdd}
                     className={'item'}
+                    index = {index}
                 />
             ))}
         </div>

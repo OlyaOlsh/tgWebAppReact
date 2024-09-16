@@ -9,14 +9,14 @@ const Navbar = () => {
             <div className={'container'}>
                 <div className={'nav-row'}>
                     <NavLink  to = "/" className='Logo'>
-                    <strong>Logo_link</strong> NameCompany
+                    <strong>Logo_link</strong> Company
                     </NavLink>
                    
-                    <ur className = {"nav-list"}>
-                    <NavLink to  ="/" className ="nav_list_home">Home</NavLink>
-                    <NavLink to  ="/itempage" className ="nav_list_home">Item</NavLink>
-                    <NavLink to  ="/contacts" className ="nav_list_home">Contacts</NavLink>
-                    </ur>
+                    <ul className = {"nav-list"}>
+                    <NavLink to  ="/" className ="nav_list_home">каталог</NavLink>
+                  {/*  <NavLink to  ="/itempage" className ="nav_list_home">продукт</NavLink>*/}
+                    <NavLink to  ="/contacts" className ="nav_list_home">контакты</NavLink>
+                    </ul>
                 </div>
             </div>
             
