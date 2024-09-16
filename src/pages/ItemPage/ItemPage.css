@@ -39,7 +39,9 @@
     font-size: 16px;
     color: #666;
     line-height: 1.6;
+    padding-top: 20px;
 }
+
 
 /* Responsive layout adjustments */
 @media (max-width: 768px) {
