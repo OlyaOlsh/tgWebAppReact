@@ -43,8 +43,8 @@
   width: 170px;
   height: 160px;
   object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  border-radius: 2px;
+  margin-bottom: 2px;
 }
 
 .title {
@@ -82,6 +82,32 @@
 .add-btn:hover {
   background-color: #2980b9;
 }
+
+.favorite-btn {
+  position: absolute; /* Позволяет разместить кнопку относительно родительского элемента */
+  top: 10px; /* Отступ от верхней границы */
+  right: 10px; /* Отступ от правой границы */
+  background: transparent; /* Прозрачный фон для кнопки */
+  border: none; /* Убираем рамку */
+  cursor: pointer; /* Курсор в виде указателя */
+  z-index: 10; /* Устанавливаем порядок отображения выше других элементов */
+}
+
+.favorite-btn:hover {
+  /*transform: scale(1.1);*/
+  box-shadow: 0 4px 15px rgba(0, 0, 0.3);
+}
+
+.share-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.share-btn:hover {
+  opacity: 0.8; /* Эффект при наведении */
+}
+
+
 
 
 

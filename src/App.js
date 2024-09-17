@@ -12,7 +12,7 @@ import ItemPage from "./pages/ItemPage/ItemPage";
 import Contacts from './pages/Contacts/Contacts';
 import ScrollToTop from './utils/scrollToTop';
 import AddProduct from './pages/AddProduct/AddProduct';
-
+import Home from './pages/Home/Home';
 
 
 function App() {
@@ -30,6 +30,7 @@ function App() {
       <Navbar />
       <Routes>
         {/*<Route index element={<ProductList/>}/>*/}
+        <Route path ="/home" element = {<Home/>}/>
         <Route path ="/" element = {<ProductList/>}/>
         <Route path ={'form'}element={<Form/>}/>
         <Route path ="/product/:id" element = {<ItemPage/>}/>
