@@ -36,7 +36,7 @@ function App() {
         <Route path ={'form'}element={<Form/>}/>
         <Route path ="/product/:id" element = {<ItemPage/>}/>
         <Route path ="/contacts" element = {<Contacts/>}/>
-        <Route path ="/Mydatabase" element = {<Mydatabase/>}/>
+        <Route path ="/mydatabase" element = {<Mydatabase/>}/>
        {/* <Route path ="/addproduct" element = {<AddProduct/>}/>*/}
       </Routes>
 
