@@ -11,8 +11,9 @@ import Form from "./components/Form/Form";
 import ItemPage from "./pages/ItemPage/ItemPage";
 import Contacts from './pages/Contacts/Contacts';
 import ScrollToTop from './utils/scrollToTop';
-import AddProduct from './pages/AddProduct/AddProduct';
+import Mydatabase from './pages/MyDatabase/Mydatabase';
 import Home from './pages/Home/Home';
+
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
   useEffect( () => {
     tg.ready();
   }, [] )
-
+  
   
   return (
     <div className="App">
@@ -35,6 +36,7 @@ function App() {
         <Route path ={'form'}element={<Form/>}/>
         <Route path ="/product/:id" element = {<ItemPage/>}/>
         <Route path ="/contacts" element = {<Contacts/>}/>
+        <Route path ="/Mydatabase" element = {<Mydatabase/>}/>
        {/* <Route path ="/addproduct" element = {<AddProduct/>}/>*/}
       </Routes>
 
