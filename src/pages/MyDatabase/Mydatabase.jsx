@@ -1,5 +1,13 @@
 import React, { useState, useEffect} from 'react';
 
+
+
+
+const Mydatabase = () => {
+
+const [products, setProducts] = useState([]);
+const [error, setError] = useState(null); 
+
 const addProduct = async () => {
     const response = await fetch('http://localhost:5000/add-product', {
         method: 'POST',
@@ -16,19 +24,9 @@ const addProduct = async () => {
   };
 
 
-
-
-const Mydatabase = () => {
-
-const [products, setProducts] = useState([]);
-const [error, setError] = useState(null); 
-
-
-
-
  const fetchProducts = async () => {
     try {
-        const response = await fetch('http://localhost:5000/get-product');
+        const response = await fetch('http://localhost:5000/get-products');
         if (!response.ok) {
             throw new Error('Ошибка при загрузке продуктов');
         }
