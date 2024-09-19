@@ -11,8 +11,8 @@
 
         },
         {
-            "src":"api/products.db",
-            "use":"@vercel/node"
+            "src": "/api/product.db",
+            "use":"@vercel/static"
 
         }
     ],
