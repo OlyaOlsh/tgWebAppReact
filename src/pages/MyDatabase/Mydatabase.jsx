@@ -9,7 +9,7 @@ const [products, setProducts] = useState([]);
 const [error, setError] = useState(null); 
 
 const addProduct = async () => {
-    const response = await fetch('http://localhost:5000/add-product', {
+    const response = await fetch('http://localhost:5000/api/addproduct', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -26,7 +26,7 @@ const addProduct = async () => {
 
  const fetchProducts = async () => {
     try {
-        const response = await fetch('http://localhost:5000/get-products');
+        const response = await fetch('http://localhost:5000/api/getproducts');
         if (!response.ok) {
             throw new Error('Ошибка при загрузке продуктов');
         }
@@ -54,9 +54,10 @@ useEffect(() => {
                     {error && <p>{error}</p>}
                     <ul>
                         {products.map(product => (
-                            <li key={product.id}>{product.description}</li>
+                            <li key={product.id}>{product.name} - {product.description} - {product.price}</li>
                         ))}
                     </ul>
+
                 </div>
             </main>
         </div>

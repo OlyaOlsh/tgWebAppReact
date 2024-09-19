@@ -9,7 +9,11 @@
 
     "routes": [
         {
-            "src": "/addproduct",
+            "src": "/api/addproduct",
+            "desc": "api/addproduct.js"
+        },
+        {
+            "src": "/api/getproducts",
             "desc": "api/addproduct.js"
         }
     ]

@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.post('/add-product', (req, res) => {
+app.post('/addproduct', (req, res) => {
     const { name, description, price, image } = req.body;
     db.run(`INSERT INTO products (name, description, price, image) VALUES (?, ?, ?, ?)`, [name, description, price, image], function(err) {
         if (err) {
@@ -19,7 +19,7 @@ app.post('/add-product', (req, res) => {
 });
 
 
-app.get('/get-products', (req, res) => {
+app.get('/getproducts', (req, res) => {
     db.all(`SELECT * FROM products`, [], (err, rows) => {
         if (err) {
             return res.status(400).send(err.message);
