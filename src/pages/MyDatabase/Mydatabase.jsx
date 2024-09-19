@@ -1,7 +1,4 @@
-import React from 'react';
-
-import MagsShop_170_162  from "./../../imagesItem/MagsShop_170_162.png";
-
+import React, { useState, useEffect} from 'react';
 
 const addProduct = async () => {
     const response = await fetch('http://localhost:5000/add-product', {
@@ -16,25 +13,54 @@ const addProduct = async () => {
     });
     const data = await response.json();
     console.log(data);
-
-
-
   };
 
-const Mydatabase = () => {
-    return (
-        <div>
-       <main className="section">
-        <div className="container">
-                <h1 className="test connect">Contacts</h1>
-                <h>
-            <h1>Приложение с SQLite</h1>
-             <button onClick={addProduct}>Добавить товар</button>
-                </h>
-                
 
-        </div>
-        </main>
+
+
+const Mydatabase = () => {
+
+const [products, setProducts] = useState([]);
+const [error, setError] = useState(null); 
+
+
+
+
+ const fetchProducts = async () => {
+    try {
+        const response = await fetch('http://localhost:5000/get-product');
+        if (!response.ok) {
+            throw new Error('Ошибка при загрузке продуктов');
+        }
+        const data = await response.json();
+        setProducts(data);
+    } catch (err) {
+        setError(err.message);
+    }
+};
+
+useEffect(() => {
+    fetchProducts();
+}, []); 
+
+
+    return (
+
+        <div>
+            <main className="section">
+                <div className="container">
+                    <h1 className="test connect">Contacts</h1>
+                    <h1>Приложение с SQLite</h1>
+                    <button onClick={addProduct}>Добавить товар</button>
+                    <button onClick={fetchProducts}>Показать</button>
+                    {error && <p>{error}</p>}
+                    <ul>
+                        {products.map(product => (
+                            <li key={product.name}>{product.description}</li>
+                        ))}
+                    </ul>
+                </div>
+            </main>
         </div>
     );
 };

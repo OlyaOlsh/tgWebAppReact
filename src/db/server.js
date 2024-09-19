@@ -1,8 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-
-const db = require('./datebase.js');
-
+const db = require('../../api/datebase.js');
 
 const app = express();
 app.use(cors());
@@ -18,9 +16,8 @@ app.post('/add-product', (req, res) => {
     });
 });
 
-
 app.get('/get-product', (req, res) => {
-    db.all(`SELECT * FROM products`, [], (err, rows) => {
+    db.all(`SELECT name, description FROM products`, [], (err, rows) => {
         if (err) {
             return res.status(400).send(err.message);
         }
@@ -28,8 +25,6 @@ app.get('/get-product', (req, res) => {
     });
 });
 
-
-
-module.exports = (req, res) => {
-    app(req, res);
-};
+app.listen(5000, () => {
+    console.log('Server is running on port 5000');
+});
