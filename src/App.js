@@ -11,7 +11,7 @@ import Form from "./components/Form/Form";
 import ItemPage from "./pages/ItemPage/ItemPage";
 import Contacts from './pages/Contacts/Contacts';
 import ScrollToTop from './utils/scrollToTop';
-import AddProducts from './AddProducts';
+import AddProducts from './AddProducts/AddProducts';
 import Home from './pages/Home/Home';
 
 
