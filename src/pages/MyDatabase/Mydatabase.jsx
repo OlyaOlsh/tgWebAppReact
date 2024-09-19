@@ -9,7 +9,8 @@ const [products, setProducts] = useState([]);
 const [error, setError] = useState(null); 
 
 const addProduct = async () => {
-    const response = await fetch('http://localhost:5000/api/addproduct', {
+  {/*}  const response = await fetch('http://localhost:5000/api/addproduct', { */}
+  const response = await fetch('/api/addproduct', { 
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -26,7 +27,8 @@ const addProduct = async () => {
 
  const fetchProducts = async () => {
     try {
-        const response = await fetch('http://localhost:5000/api/getproducts');
+        {/* const response = await fetch('http://localhost:5000/api/getproducts');*/}
+        const response = await fetch('/api/getproducts');
         if (!response.ok) {
             throw new Error('Ошибка при загрузке продуктов');
         }
@@ -34,6 +36,10 @@ const addProduct = async () => {
         setProducts(data);
     } catch (err) {
         setError(err.message);
+        if (err) {
+            console.error(err.message); // Логируем ошибку
+            return res.status(400).send(err.message);
+        }
     }
 };
 

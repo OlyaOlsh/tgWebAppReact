@@ -4,6 +4,11 @@
         {
             "src": "api/addproduct.js",
             "use": "@vercel/node"
+        },
+        { 
+            "src":"/api/getproducts",
+            "use": "@vercel/node"
+
         }
     ],
 
@@ -14,7 +19,7 @@
         },
         {
             "src": "/api/getproducts",
-            "desc": "api/addproduct.js"
+            "desc": "api/getproducts.js"
         }
     ]
 }
