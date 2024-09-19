@@ -17,7 +17,7 @@ app.post('/add-product', (req, res) => {
 });
 
 app.get('/get-product', (req, res) => {
-    db.all(`SELECT name, description FROM products`, [], (err, rows) => {
+    db.all(`SELECT * FROM products`, [], (err, rows) => {
         if (err) {
             return res.status(400).send(err.message);
         }

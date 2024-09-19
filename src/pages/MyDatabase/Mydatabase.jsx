@@ -56,7 +56,7 @@ useEffect(() => {
                     {error && <p>{error}</p>}
                     <ul>
                         {products.map(product => (
-                            <li key={product.name}>{product.description}</li>
+                            <li key={product.id}>{product.description}</li>
                         ))}
                     </ul>
                 </div>
