@@ -19,17 +19,6 @@ app.post('/api/addproduct', (req, res) => {
 });
 
 
-app.get('/api/getproducts', (req, res) => {
-    db.all(`SELECT * FROM products`, [], (err, rows) => {
-        if (err) {
-            return res.status(400).send(err.message);
-        }
-        res.json(rows);
-    });
-});
-
-
-
 module.exports = (req, res) => {
     app(req, res);
 };
