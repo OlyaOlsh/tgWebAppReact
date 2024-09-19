@@ -9,6 +9,11 @@
             "src":"/api/getproducts",
             "use": "@vercel/node"
 
+        },
+        {
+            "src":"api/products.db",
+            "use":"@vercel/node"
+
         }
     ],
 
