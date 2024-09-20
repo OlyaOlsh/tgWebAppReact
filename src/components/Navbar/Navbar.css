@@ -1,4 +1,4 @@
-/* Navbar.css */
+/* Navbar.css 
 .nav {
     background-color: #f8f8f8;
     padding: 10px 20px;
@@ -13,10 +13,46 @@
 .nav-list {
     list-style: none;
     display: flex;
-    gap: 20px; /* Spacing between links */
+    gap: 20px; 
 }
 
 .nav-list a {
     text-decoration: none;
     color: #333;
+}*/
+
+.nav {
+    background-color: #f8f9fa; /* Цвет фона панели навигации */
+    overflow-x: auto; /* Включаем горизонтальную прокрутку */
+    white-space: nowrap; /* Запрещаем перенос строк */
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; /* Отступы внутри контейнера */
+}
+
+.nav-row {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex; /* Используем flex для горизонтального расположения элементов */
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin-left: auto; /* Сдвигаем список вправо */
+}
+
+.nav_list_home {
+    margin-right: 20px; /* Отступ между элементами навигации */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #007bff; /* Цвет текста ссылок */
+}
+
+.nav_list_home:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+

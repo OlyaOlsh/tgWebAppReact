@@ -1,23 +1,21 @@
 import './Navbar.css';
-
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <div className = {'nav'}>
+        <div className={'nav'}>
             <div className={'container'}>
                 <div className={'nav-row'}>
-                    <NavLink  to = "/" className='Logo'>
-                    <strong>Logo_link</strong> Company
+                    <NavLink to="/home" className='Logo'>
+                        <strong>Logo</strong> 
                     </NavLink>
-                   
-                    <ul className = {"nav-list"}>
-                    <NavLink to  ="/" className ="nav_list_home">каталог</NavLink>
-                  {/*  <NavLink to  ="/itempage" className ="nav_list_home">продукт</NavLink>*/}
-                    <NavLink to  ="/contacts" className ="nav_list_home">контакты</NavLink>
-                    <NavLink to  ="/addproducts" className ="nav_list_home">добавить</NavLink>
-                    <NavLink to  ="/preAddPro" className ="nav_list_home">админ_1</NavLink>
+                    <ul className={"nav-list"}>
+                        <NavLink to="/" className="nav_list_home">каталог</NavLink>
+                        <NavLink to="/contacts" className="nav_list_home">контакты</NavLink>
+                       {/* <NavLink to="/addproducts" className="nav_list_home">добавить</NavLink>*/}
+                        <NavLink to="/preAddPro" className="nav_list_home">админ_1</NavLink>
+
                     </ul>
                 </div>
             </div>
@@ -26,3 +24,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
