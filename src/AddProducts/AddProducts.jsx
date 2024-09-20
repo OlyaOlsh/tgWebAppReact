@@ -8,6 +8,8 @@ import './AddProducts.css';
 
 
 
+
+
 const AddProducts = () => {
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
@@ -98,7 +100,7 @@ const AddProducts = () => {
             <div class="container">
                 <h1>Добавить товар</h1>
                 <input 
-                    type="text" required
+                    type="text" 
                     placeholder="Название" 
                     value={name} 
                     onChange={(e) => setName(e.target.value)} 
@@ -118,13 +120,7 @@ const AddProducts = () => {
                     onChange={(e) => setPrice(e.target.value)} 
                     className="input-field"
                 />
-              {/*}  <input
-                    type ="text"
-                    placeholder ="Url изображения"
-                    value = {imageUrl}
-                    onChange={(e)=> setImageUrl(e.target.value)}
-                    className="input-field"
-                />*/}
+   
                   <DropZone onFileUpload={setImageUrl} /> {/* Использование DropZone */}
                   {imageUrl && <img src={imageUrl} alt="Предпросмотр" style={{ width: '100px', height: 'auto' }} />}
                 <div className="button-group">
@@ -139,19 +135,24 @@ const AddProducts = () => {
                     </button>
                 </div>
                 {error && <p className="error-message">{error}</p>}
-                <ul>
+
+
+              {/*  <div style={styles.productList}>
                     {products.map(product => (
                         <li key={product.id}>
-                            <input
-                            type="checkbox"
-                            checked={selectedProducts.includes(product)}
-                            onChange={() => toggleProductSelection(product)}
-                        />
-                         {product.name}: {product.description} - {product.price}₽
+                            <input type="checkbox"checked={selectedProducts.includes(product)}onChange={() => toggleProductSelection(product)} />
+                         <div style={styles.productDetails}>   
+                         <Text style={styles.productName}>{product.name}: {product.description}</Text> 
+                         <Text style={styles.productPrice}>{product.price}₽</Text> 
                          {product.imageUrl && <img src={product.imageUrl} alt={product.name} style={{ width: '100px', height: 'auto' }} />}
+                         </div>
+                         <div style={styles.arrow}>&#x279C;</div>
                         </li>
                     ))}                 
-                </ul>
+                </div>*/}
+
+
+
             </div>
         </main>
     </div>
@@ -160,6 +161,11 @@ const AddProducts = () => {
 };
 
 export default AddProducts;
+
+
+
+
+
 
 
 

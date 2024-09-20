@@ -13,6 +13,7 @@ import Contacts from './pages/Contacts/Contacts';
 import ScrollToTop from './utils/scrollToTop';
 import AddProducts from './AddProducts/AddProducts';
 import Home from './pages/Home/Home';
+import PreAddPro from './pages/preFolder/PreAddPro';
 
 
 
@@ -37,6 +38,7 @@ function App() {
         <Route path ="/product/:id" element = {<ItemPage/>}/>
         <Route path ="/contacts" element = {<Contacts/>}/>
         <Route path ="/addproducts" element = {<AddProducts/>}/>
+        <Route path ="/preAddPro" element = {<PreAddPro/>}/>
        {/* <Route path ="/addproduct" element = {<AddProduct/>}/>*/}
       </Routes>
 

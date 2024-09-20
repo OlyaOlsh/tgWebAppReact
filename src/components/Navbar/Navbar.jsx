@@ -17,10 +17,10 @@ const Navbar = () => {
                   {/*  <NavLink to  ="/itempage" className ="nav_list_home">продукт</NavLink>*/}
                     <NavLink to  ="/contacts" className ="nav_list_home">контакты</NavLink>
                     <NavLink to  ="/addproducts" className ="nav_list_home">добавить</NavLink>
+                    <NavLink to  ="/preAddPro" className ="nav_list_home">админ_1</NavLink>
                     </ul>
                 </div>
             </div>
-            
         </div>
     );
 };

@@ -63,3 +63,67 @@ h1 {
 .error-message {
     color: red;
 }
+
+
+
+
+  /*  .container{
+      display: 'flex';
+      flex-direction: 'column';
+      justify-content: 'space-between';
+      height: '100vh';
+      font-family: "'SF Pro Text', sans-serif";
+      background-color: '#f2f2f6';
+    }
+    .header {
+      text-align: 'left';
+      padding: '16px';
+      background-color: '#fff'
+    }
+    .headerText {
+      font-size: '20px'; 
+      font-weight: 'bold'; 
+      color: '#000'
+    }
+    .subHeaderText {
+      font-size: '14px'; 
+      color: '#8e8e93'
+    }
+    .productList {
+      padding: '16px'; 
+      background-color: '#fff'
+    }
+    .productItem {
+      display: 'flex'; 
+      align-items: 'center'; 
+      justify-content: 'space-between'; 
+      padding: '12px 0'; 
+      border-bottom: '1px solid #e5e5ea'; 
+      cursor: 'pointer'
+    }
+    .productImage {
+      width: '40px'; 
+      height: '40px'; 
+      border-radius: '4px'; 
+      object-fit: 'cover'; 
+      margin-right: '12px'
+    }
+    .productDetails {
+     flex-grow: 1
+    }
+    .productName {
+      font-size: '16px'; 
+      font-weight: '500'; 
+      color: '#000'
+    }
+    .productPrice {
+      font-size: '14px'; 
+      color: '#8e8e93'
+    }
+    .arrow {
+      font-size: '20px'; 
+      color: '#c7c7cc'
+    }*/
+  
+  
+  
