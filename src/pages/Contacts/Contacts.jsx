@@ -1,13 +1,15 @@
 import React from 'react';
+import "./../Contacts/Contacts.css";
 
 const Contacts = () => {
     return (
 
      <main className="section">
         <div className="container">
-                <h1 className="title-1">Contacts</h1>
+               
 
                 <ul className="content-list">
+                    <h1 className="title-1">Contacts</h1>
                     <li className="content-list__item">
                         <h2 className="title-2">Location</h2>
                         <p>SPB, Russia</p>

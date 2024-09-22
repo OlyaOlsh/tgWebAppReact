@@ -23,9 +23,9 @@ const settings = {
 };
 
 
-    return ( <main className="section">
-        <div className="container">
-            <div className="project-details">
+    return ( <main className="section_itemPage">
+        <div className="container_itemPage">
+            <div className="project-details_itemPage">
 
                 <h1 className="title-1">{productCur.title}</h1>
 

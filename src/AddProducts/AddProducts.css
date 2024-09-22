@@ -49,6 +49,7 @@ h1 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 10px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 

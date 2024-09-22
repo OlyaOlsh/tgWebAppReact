@@ -3,18 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*body{
+body{
     background: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
-}*/
+}
 
-body {
-    font-family: 'Poppins', sans-serif; /* Modern and clean font */
-    background-color: #f8f9fa; /* Light, neutral background */
-    margin: 0;
-    padding: 0;
-    color: #333; /* Text color */
-  }
 
   
   

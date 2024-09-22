@@ -1,7 +1,9 @@
- import React, {useState} from 'react';
-import './ProductList.css';
+import React, {useState} from 'react';
+
+import './ProductListStyle.css';
 import ProductItem from "../ProductItem/ProductItem";
 import {useTelegram} from "../../hooks/useTelegram";
+
 import {useCallback, useEffect} from "react";
 
 import { products } from '../helpers/productsList';
@@ -68,23 +70,22 @@ const ProductList = () => {
 
     return (
         <div>
-            <input
-            type="text"
-            placeholder="Поиск по названию"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            />
-            <div className={'list'}>
-                {filteredProducts.map((item, index)  => (
-                    <ProductItem key = {item.id}
-                        product={item}
-                        onAdd={onAdd}
-                        className={'item'}
-                        index = {index}
-                    />
-                ))}
-            </div>
+        <div className ="search-container">
+        <input type="text" placeholder="Поиск по названию" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
         </div>
+
+        <div className={'list'}>
+            {filteredProducts.map((item, index)  => (
+                <ProductItem key = {item.id}
+                    product={item}
+                    onAdd={onAdd}
+                    className={'product-item'}
+                    index = {index}
+                />
+            ))}
+        </div>
+    </div>
+
     );
 };
 
