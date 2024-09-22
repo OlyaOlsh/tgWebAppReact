@@ -60,7 +60,7 @@ const ProductItem = ({product, className, onAdd, index}) => {
                         title={product.title}
                         className='telegram-btn'
                     >
-                        <FaTelegramPlane size={24} color = "#fff"/>
+                        <FaTelegramPlane size={24} color = "#a5c3ec"/>
                     </TelegramShareButton>
 
                 <div className="product-details">

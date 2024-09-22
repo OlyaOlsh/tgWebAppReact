@@ -124,7 +124,7 @@ text-decoration: none;
   cursor: pointer; /* Указатель при наведении */
 
   position: absolute;
-  top: calc(100% - 70px);
+  top: calc(100% - 90px);
   right: 10px;
 }
 
