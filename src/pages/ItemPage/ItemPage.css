@@ -1,4 +1,9 @@
 /* Main section styling */
+.header
+{
+    display: none;
+}
+
 .section_itemPage {
     padding: 20px;
     background-color: #f9f9f9; /* Light background for contrast */

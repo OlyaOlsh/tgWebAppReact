@@ -1,8 +1,13 @@
+.header
+{
+    display: block;
+}
 
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
-  background-color: var(--tg-theme-bg-color)
+  background-color: var(--tg-theme-bg-color);
+  text-decoration: none;
 }
 
 .search-container {
@@ -70,24 +75,30 @@ input[type="text"] {
   padding: 10px;
   background-color: #fff;
   padding: 10px;
+ /* text-decoration: none*/
 }
 
 .product-name {
   font-size: 16px;
   font-weight: bold;
-  
   color: var(--tg-theme-text-color);
+ /* text-decoration: none*/
 }
 
 .product-description {
   font-size: 14px;
   color: var(--tg-theme-hint-color);
+  /*text-decoration: none*/
 }
 
 .product-price {
   font-size: 16px;
 
   color: #2f3234;
+ /* text-decoration: none*/
+}
+.product-description:hover {
+text-decoration: none;
 }
 
 .add-btn {
@@ -99,7 +110,7 @@ input[type="text"] {
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s; /* Smooth color transition */
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 20px;
 
 }

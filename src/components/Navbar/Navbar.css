@@ -27,7 +27,7 @@
     white-space: nowrap; /* Запрещаем перенос строк */
 }
 
-.container {
+.container_nav {
     display: flex;
     align-items: center;
     padding: 10px 20px; /* Отступы внутри контейнера */
