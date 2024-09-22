@@ -68,7 +68,7 @@ input[type="text"] {
 
 .product-details {
   padding: 10px;
-  background-color: var(--tg-theme-hint-color);
+  background-color: #fff;
   padding: 10px;
 }
 
@@ -91,14 +91,17 @@ input[type="text"] {
 }
 
 .add-btn {
-    background-color:var(--tg-theme-button-color); /* Telegram blue for buttons */
+    width: 100%;
+    background-color: #fff;
     color: var(--tg-theme-button-text-color);
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s; /* Smooth color transition */
     font-size: 14px;
+    margin-top: 20px;
+
 }
 .add-btn:hover {
   background-color: darken(var(var(--tg-theme-button-color)), 10%);
