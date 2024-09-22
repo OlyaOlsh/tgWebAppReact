@@ -20,9 +20,26 @@ const ProductList = () => {
     const {tg, queryId} = useTelegram();
 
     const [searchTerm, setSearchTerm] = useState('');
+
+    const [sortKey, setSortKey] = useState(null); // Изначально сортировка не выбрана
+    const [order, setOrder] = useState('asc');
+
+
     const filteredProducts = products.filter(product =>
         product.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
+
+
+     // Сортируем только если выбран sortKey
+     const sortedProducts = sortKey ? [...filteredProducts].sort((a, b) => {
+        if (sortKey === 'price') {
+            return order === 'asc' ? a.price - b.price : b.price - a.price; // Сортировка по цене
+        } else if (sortKey === 'title') {
+            return order === 'asc' ? a.title.localeCompare(b.title) : b.title.localeCompare(a.title); // Сортировка по названию
+        }
+        return 0;
+    }) : filteredProducts;
+
 
     const onSendData = useCallback(() => {
         const data = {
@@ -74,8 +91,17 @@ const ProductList = () => {
         <input type="text" placeholder="Поиск по названию" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
         </div>
 
+        <div className="sort-container">
+                <select onChange={(e) => setSortKey(e.target.value)} defaultValue="">
+                    <option value="" disabled>Сортировка</option>
+                    <option value="price">По возрастанию цены</option>
+                    <option value="price_desc">По убыванию цены</option> 
+                    <option value="title">По названию</option>
+                </select>
+        </div>
+
         <div className={'list'}>
-            {filteredProducts.map((item, index)  => (
+            {sortedProducts.map((item, index)  => (
                 <ProductItem key = {item.id}
                     product={item}
                     onAdd={onAdd}

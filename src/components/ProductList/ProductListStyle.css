@@ -13,6 +13,9 @@ body {
 .search-container {
   margin: 20px;
 }
+.sort-container {
+  margin: 20px;
+}
 
 input[type="text"] {
   width: 100%;
