@@ -13,7 +13,8 @@ const webAppUrl = 'https://tg-web-app-react-teal.vercel.app';
 
 const ProductItem = ({product, className, onAdd, index}) => {
 
-    const onAddHandler = () => {
+    const onAddHandler = (event) => {
+        event.preventDefault(); // Предотвращаем переход по ссылке
         onAdd(product);
     }
 
