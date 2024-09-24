@@ -14,7 +14,8 @@ import ScrollToTop from './utils/scrollToTop';
 import AddProducts from './AddProducts/AddProducts';
 import Home from './pages/Home/Home';
 import PreAddPro from './pages/preFolder/PreAddPro';
-
+import ProductForm from './pages/preAddProduct/ProductForm';
+import MyTest from './pages/Test/MyTest';
 
 
 function App() {
@@ -39,7 +40,8 @@ function App() {
         <Route path ="/contacts" element = {<Contacts/>}/>
         <Route path ="/addproducts" element = {<AddProducts/>}/>
         <Route path ="/preAddPro" element = {<PreAddPro/>}/>
-       {/* <Route path ="/addproduct" element = {<AddProduct/>}/>*/}
+        <Route path ="/productForm" element = {<ProductForm/>}/>
+        <Route path ="/mytest" element = {<MyTest/>}/>
       </Routes>
 
     </div>

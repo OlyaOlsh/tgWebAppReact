@@ -45,7 +45,7 @@ const ProductItem = ({product, className, onAdd, index}) => {
 
     return (
         <div className='product-item-grid'>
-        <NavLink to={`/product/${index}`}>
+        <NavLink to={`/product/${index}`} className="no-underline">
         <div className= {'product'+ className}>
             <div className={'product-item'}>
                 <div style={{ position: 'relative' }}>
@@ -63,15 +63,15 @@ const ProductItem = ({product, className, onAdd, index}) => {
                         <FaTelegramPlane size={24} color = "#a5c3ec"/>
                     </TelegramShareButton>
 
-                <div className="product-details">
-                    <div className={'product-name'}>{product.title}</div>
-                    <div className={'product-description'}>{product.description}</div>
-                    <div className={'product-price'}>
+                <div className="product-details-catalog">
+                    <div className={'product-name-catalog'}>{product.title}</div>
+                    <div className={'product-description-catalog'}>{product.description}</div>
+                    <div className={'product-price-catalog'}>
                         <span><b>{product.price} руб.</b></span>
                     </div>
                 
                
-                <Button className={'add-btn'} onClick={onAddHandler}>
+                <Button className={'add-btn-catalog'} onClick={onAddHandler}>
                     Добавить в корзину
                 </Button>
                 </div>

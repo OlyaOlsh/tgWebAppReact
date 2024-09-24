@@ -3,6 +3,7 @@ import "./../preFolder/PreAddPro.css";
 import React, { useState, useEffect } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from './../../firebase.js';
+import { Link } from 'react-router-dom';
 
 const PreAddPro = () => {
   const [products, setProducts] = useState([]);
@@ -39,6 +40,12 @@ const PreAddPro = () => {
     console.log('Переход на страницу добавления продукта');
   };
 
+
+
+function ButtonLink({ to, children }) {
+  return <Link to={to}><button>{children}</button></Link>;
+}
+
   return (
     <div className="app-container">
       <input 
@@ -61,7 +68,7 @@ const PreAddPro = () => {
           </div>
         ))}
       </div>
-      <button className="add-button" onClick={handleAddProduct}>Добавить продукт</button>
+      <ButtonLink to="/mytest" onClick={handleAddProduct}>Добавить продукт</ButtonLink>
     </div>
   );
 };

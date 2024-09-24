@@ -1,6 +1,7 @@
 .header
 {
     display: block;
+    text-decoration: none;
 }
 
 body {
@@ -29,6 +30,7 @@ input[type="text"] {
   grid-template-columns: repeat(2, 1fr); /* Две карточки в ряд */
   gap: 6 px; /* Промежуток между карточками */
   /*padding: 20px;*/
+  text-decoration: none;
 }
 
 .product-item-grid {
@@ -74,27 +76,27 @@ input[type="text"] {
   cursor: pointer;
 }
 
-.product-details {
+.product-details-catalog {
   padding: 10px;
   background-color: #fff;
   padding: 10px;
  /* text-decoration: none*/
 }
 
-.product-name {
+.product-name-catalog {
   font-size: 16px;
   font-weight: bold;
   color: var(--tg-theme-text-color);
  /* text-decoration: none*/
 }
 
-.product-description {
+.product-description-catalog {
   font-size: 14px;
   color: var(--tg-theme-hint-color);
   /*text-decoration: none*/
 }
 
-.product-price {
+.product-price-catalog {
   font-size: 16px;
 
   color: #2f3234;
@@ -104,7 +106,7 @@ input[type="text"] {
 text-decoration: none;
 }
 
-.add-btn {
+.add-btn-catalog {
     width: 100%;
     background-color: #fff;
     color: var(--tg-theme-button-text-color);
@@ -117,7 +119,7 @@ text-decoration: none;
     margin-top: 20px;
 
 }
-.add-btn:hover {
+.add-btn-catalog:hover {
   background-color: darken(var(var(--tg-theme-button-color)), 10%);
 
 }
@@ -125,12 +127,20 @@ text-decoration: none;
   background: none; /* Без фона */
   border: none; /* Без рамки */
   cursor: pointer; /* Указатель при наведении */
-
+  text-decoration: none;
   position: absolute;
   top: calc(100% - 90px);
   right: 10px;
 }
 
+.no-underline
+{
+  text-decoration: none;
+}
+ .product-name-catalog, .product-description-catalog, .product-price-catalog
+{
+  text-decoration: none;
+}
 
 /*адаптивность*/
 /*@media (max-width: 767px) {

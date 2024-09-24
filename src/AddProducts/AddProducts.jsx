@@ -6,17 +6,12 @@ import DropZone from '../utils/dropZone.js'; // Импортируйте ком�
 import './AddProducts.css';
 
 
-
-
-
-
 const AddProducts = () => {
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
     const [price, setPrice] = useState('');
     const [products, setProducts] = useState([]);
     const [imageUrl, setImageUrl] = useState('');
-    {/* const [currentImageUrl, setCurrentImageUrl] = useState(''); // Новое состояние для изображения*/}
     const [error, setError] = useState('');
     const [selectedProducts, setSelectedProducts] = useState([]);
     const [imageFile, setImageFile] = useState(null);
